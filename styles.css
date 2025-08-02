@@ -1,0 +1,65 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #0A0A0A;
+  color: #F5F5F5;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: #D4AF37;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.book {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  padding: 2rem 1.5rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.4s, border-color 0.4s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.book:hover {
+  transform: scale(1.03);
+  border-color: #D4AF37;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.2);
+}
+
+.book a {
+  text-decoration: none;
+  color: #D4AF37;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  display: block;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
